@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>ingrid</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="ingrid-build.css">
+	</head>
+	<body>
+		<form id="ingrid-form" action="#" method="post" accept-charset="utf-8">
+			<h1><a href="http://ui-studio.fr"><strong>inGrid <small>v1.0</small></strong> <span>by UI Studio</span></a></h1>
+			<fieldset id="ingrid-fieldset-grid">
+				<legend>Columns</legend>
+				<table cellspacing="0">
+					<thead>
+						<tr>
+							<th>page</th>
+							<th>column</th>
+							<th>sub-column</th>
+						</tr>
+					<thead>
+					<tbody>
+						<tr>
+							<td id="ingrid-pageWidth">960px</td>
+							<td id="ingrid-columnWidth">300px</td>
+							<td id="ingrid-subcolumnWidth">100px</td>
+						</tr>
+					</tbody>
+				</table>
+				<ol>
+					<li>
+						<label for="ingrid-start-with">define <small>px</small></label>
+						<select id="ingrid-start-with" name="defineWith">
+							<option selected="selected" value="c">column width</option>
+							<option value="p">page width</option>
+						</select>
+						<input type="text" id="ingrid-width" name="width" value="">
+					</li>
+					<li class="ingrid-align">
+						<label for="ingrid-number">columns <small>#</small></label>
+						<input type="text" id="ingrid-number" name="cols" value="">
+					</li>
+					<li class="ingrid-align">
+						<label for="ingrid-subset">sub-columns <small>#</small></label>
+						<input type="text" id="ingrid-subset" name="subcols" value="">
+					</li>
+					<li class="ingrid-align">
+						<label for="ingrid-gutter">gutter <small>px</small></label>
+						<input type="text" id="ingrid-gutter" name="gutter" value="">
+					</li>
+					<li class="ingrid-align">
+						<label for="ingrid-align">align</label>
+						<select id="ingrid-align" name="align">
+							<option value="l">left</option>
+							<option selected="selected" value="c">center</option>
+							<option value="r">right</option>
+						</select>
+					</li>
+					<li class="ingrid-align">
+						<label for="ingrid-margin-left">margin left <small>px</small></label>
+						<input type="text" id="ingrid-margin-left" name="marginLeft" value="">
+					</li>
+					<li class="ingrid-align">
+						<label for="ingrid-margin-right">margin right <small>px</small></label>
+						<input type="text" id="ingrid-margin-right" name="marginRight" value="">
+					</li>
+				</ol>
+			</fieldset>
+			<fieldset id="ingrid-fieldset-baseline">
+				<legend>Baseline</legend>
+				<ol>
+					<li class="ingrid-align">
+						<label for="ingrid-line-height">line-height <small>px</small></label>
+						<input type="text" id="ingrid-line-height" name="lineHeight" value="">
+					</li>
+					<li class="ingrid-align">
+						<label for="ingrid-margin-top">margin top <small>px</small></label>
+						<input type="text" id="ingrid-margin-top" name="marginTop" value="">
+					</li>
+				</ol>
+			</fieldset>
+			<fieldset id="ingrid-fieldset-display">
+				<legend>Display</legend>
+				<ol>
+					<li class="checkbox">
+						<label for="ingrid-display-grid"><input type="checkbox" id="ingrid-display-grid" name="grid" value="Display grid"> Display grid <span>or press <em>g</em> twice</span></label>
+					</li>
+					<li class="checkbox">
+						<label for="ingrid-display-baseline"><input type="checkbox" id="ingrid-display-baseline" name="baseline" value="Display baseline"> Display baseline <span>or press <em>b</em> twice</span></label>
+					</li>
+				</ol>
+				<p>To hide / show this panel press <em>p</em> twice.</p>
+			</fieldset>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,287 @@
+/* @group Reset */
+
+#ingrid-form,
+#ingrid-baseline,
+#ingrid-grid,
+#ingrid-form div,
+#ingrid-baseline div,
+#ingrid-grid div,
+#ingrid-form span,
+#ingrid-form h1,
+#ingrid-form p,
+#ingrid-form strong,
+#ingrid-form small,
+#ingrid-form ol,
+#ingrid-form li,
+#ingrid-form form,
+#ingrid-form fieldset,
+#ingrid-form label,
+#ingrid-form legend,
+#ingrid-form table,
+#ingrid-form caption,
+#ingrid-form tbody,
+#ingrid-form tfoot,
+#ingrid-form thead,
+#ingrid-form tr,
+#ingrid-form th,
+#ingrid-form td
+{
+	clear: none;
+	float: none;
+	position: static;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	color: #fff;
+	background: none;
+	font: 12px/18px "Lucida Grande", Lucida, Arial, Helvetica, sans-serif;
+}
+
+#ingrid-form,
+#ingrid-baseline,
+#ingrid-grid,
+#ingrid-form div,
+#ingrid-baseline div,
+#ingrid-grid div,
+#ingrid-form h1,
+#ingrid-form p,
+#ingrid-form ol,
+#ingrid-form li,
+#ingrid-form form,
+#ingrid-form fieldset,
+#ingrid-form legend,
+#ingrid-form table
+{
+	display: block;
+}
+
+#ingrid-form span,
+#ingrid-form strong,
+#ingrid-form small,
+#ingrid-form label
+{
+	display: inline;
+}
+
+
+/* @end */
+
+/* @group Form */
+
+#ingrid-form {
+  position: fixed !important;
+	position: absolute;/* FOR IE6 only */
+	top: 0;
+	left: 0;
+	width: 260px;
+	background: #111;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	z-index: 1001;
+}
+#ingrid-form h1 {
+	float: left;
+	width: 100%;	
+}
+
+#ingrid-form h1 a {
+	float: left;
+	width: 100%;
+	padding: 15px 0;
+	margin: 0 0 10px;
+	text-decoration: none;
+	background: #222;
+	
+}
+
+#ingrid-form h1 a:hover {
+	text-decoration: none;
+	background: #76a61d;
+	
+}
+
+#ingrid-form h1 strong {
+	float: left;
+	margin: 0 15px;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+}
+
+#ingrid-form h1 strong small {
+	font-size: 10px;
+}
+
+#ingrid-form h1 span {
+	float: right;
+	margin: 0 15px;
+	color: #333;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+#ingrid-form fieldset {
+	clear: both;
+	border: none;
+	padding: 15px 0;
+	margin: 0 20px;
+}
+
+#ingrid-form legend {
+	color: #666;
+}
+
+#ingrid-form ol {
+	list-style: none;
+}
+
+#ingrid-form li {
+	clear: left;
+	margin: 0 0 10px;
+}
+
+#ingrid-form label {
+	display: -moz-inline-box; /* FF 2 */
+	display: inline-block;
+}
+
+#ingrid-form .ingrid-align label {
+	width: 100px;
+}
+
+#ingrid-form label small {
+	font-size: 10px;
+	color: #333;
+}
+
+#ingrid-form input {
+	width: 40px;
+	border: none;
+	background: #222;
+	text-align: center;
+	color:  #fff;
+}
+#ingrid-form input[type=checkbox]
+{
+  background: none;
+}
+
+#ingrid-form input:focus,
+#ingrid-form input:active {
+	outline: none;
+	border-color: #999;
+	background: #333;
+}
+
+#ingrid-form select {
+	border: 1px solid #666;
+	background: #222;
+	color: #fff;
+}
+
+#ingrid-form #ingrid-fieldset-display input {
+	width: auto;
+}
+
+#ingrid-form #ingrid-start-with {
+	margin: 0 5px;
+}
+
+#ingrid-form #ingrid-fieldset-grid table {
+	border-collapse: separate;
+	border-spacing: 0;
+	text-align: left;
+	width: 100%;
+	margin: 0 0 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #333;
+}
+
+#ingrid-form #ingrid-fieldset-grid table th,
+#ingrid-form #ingrid-fieldset-grid table td {
+	width: 33%;
+}
+
+#ingrid-form #ingrid-fieldset-grid table th {
+	color: #666;
+	font-size: 10px;
+}
+
+#ingrid-form #ingrid-fieldset-grid table td {
+	color: #fff;
+	font-size: 14px;
+}
+
+
+#ingrid-fieldset-baseline,
+#ingrid-fieldset-display {
+	
+}
+
+#ingrid-fieldset-display span,
+#ingrid-fieldset-display p {
+	font-size: 10px;
+	color: #666;
+}
+
+#ingrid-fieldset-display span em,
+#ingrid-fieldset-display p em {
+	font-size: 10px;
+	color: #fff;
+}
+
+#ingrid-fieldset-display p em {
+	font-weight: bold;
+}
+
+/* @end */
+
+/* @group column */
+
+#ingrid {
+	position: fixed !important;
+	position: absolute;/* For IE6 only */
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+#ingrid div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #f00;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+
+/* @end */
+
+/* @group baseline */
+
+#ingrid-baseline
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#ingrid-baseline div
+{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f00;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  font-size: 0;
+  overflow: hidden;
+}
+
+/* @end */

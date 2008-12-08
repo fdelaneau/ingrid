@@ -1,0 +1,1 @@
+javascript:(function()%7Bvar%20script=document.createElement('script');script.src='http://fdelaneau.com/ingrid/ingrid.js';document.getElementsByTagName('head')%5B0%5D.appendChild(script);setTimeout(%22ingrid();%22,500);%7D)()
